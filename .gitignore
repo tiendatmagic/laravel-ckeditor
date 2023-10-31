@@ -4,6 +4,7 @@
 /public/media
 /storage/*.key
 /vendor
+.angular
 .env
 .env.backup
 .phpunit.result.cache
