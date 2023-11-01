@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 route::post('create', [HomeController::class, 'index']);
 
-Route::post('ckeditor/upload', [HomeController::class, 'upload'])->name('ckeditor.upload');
+Route::post('ckeditor/upload', [HomeController::class, 'upload']);
 
 
 route::get('show', [HomeController::class, 'show']);

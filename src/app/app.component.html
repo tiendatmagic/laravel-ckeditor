@@ -5,7 +5,8 @@
   <!-- <textarea id="editor" name="description"></textarea> -->
   <!-- app.component.html -->
 
-  <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" name="description" [formControl]="description" ngModel>
+  <ckeditor [editor]="Editor" [config]="editorConfig" data="<p>Hello, world!</p>" (ready)="onReady($event)"
+    name="description" [formControl]="description" ngModel>
   </ckeditor>
 
   <button type="button" (click)="onCreate()">Click me</button>
