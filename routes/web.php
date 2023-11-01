@@ -20,8 +20,8 @@ Route::get('/', function () {
 });
 
 
-route::post('/create', [HomeController::class, 'index']);
 
+route::post('/create', [HomeController::class, 'index']);
 
 Route::post('ckeditor/upload', [HomeController::class, 'upload'])->name('ckeditor.upload');
 

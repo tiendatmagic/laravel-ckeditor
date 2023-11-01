@@ -21,7 +21,7 @@ class HomeController extends Controller
 
         $student->save();
 
-        return redirect()->back();
+        return 'student created';
     }
 
 
