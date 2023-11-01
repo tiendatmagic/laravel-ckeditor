@@ -24,20 +24,12 @@ class HomeController extends Controller
         return 'student created';
     }
 
-
     public function show()
     {
         $student = Student::all();
 
         return view("show", compact('student'));
     }
-
-
-
-
-
-
-
 
     public function upload(Request $request)
     {
